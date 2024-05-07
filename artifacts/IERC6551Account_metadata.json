@@ -1,0 +1,132 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "executeCall",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "chainId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"executeCall(address,uint256,bytes)": {
+					"details": "Executes `call` on address `to`, with value `value` and calldata `data`. MUST revert and bubble up errors if call fails. By default, token bound accounts MUST allow the owner of the ERC-721 token which owns the account to execute arbitrary calls using `executeCall`. Token bound accounts MAY implement additional authorization mechanisms which limit the ability of the ERC-721 token holder to execute calls. Token bound accounts MAY implement additional execution functions which grant execution permissions to other non-owner accounts.",
+					"returns": {
+						"_0": "The result of the call"
+					}
+				},
+				"owner()": {
+					"details": "Returns the owner of the ERC-721 token which controls the account if the token exists. This is value is obtained by calling `ownerOf` on the ERC-721 contract.",
+					"returns": {
+						"_0": "Address of the owner of the ERC-721 token which owns the account"
+					}
+				},
+				"token()": {
+					"details": "Returns identifier of the ERC-721 token which owns the account The return value of this function MUST be constant - it MUST NOT change over time.",
+					"returns": {
+						"chainId": "The EIP-155 ID of the chain the ERC-721 token exists on",
+						"tokenContract": "The contract address of the ERC-721 token",
+						"tokenId": "The ID of the ERC-721 token"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"dynamic_nft/IERC6551Account.sol": "IERC6551Account"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"dynamic_nft/IERC6551Account.sol": {
+			"keccak256": "0x15fb89791745bd5f44b8b50890921de74604378b42923ad6d19168a24c90fb9b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://6c53bb44cc10ca8894cbc5ed8ecbd237c4945a1f1b91b6a3064943fd937b11fa",
+				"dweb:/ipfs/QmeE1FywwEmFriBJyjGceFGwsA9X9NDK7poguXpTJGDYan"
+			]
+		}
+	},
+	"version": 1
+}

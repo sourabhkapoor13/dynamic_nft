@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "ContextOverflow",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "CreateError",
+				"type": "error"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"dynamic_nft/MinimalProxyStore.sol": "MinimalProxyStore"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/utils/Create2.sol": {
+			"keccak256": "0x6e00f269073ffc4350e56b7e8153c9092d5f70bfba423299990514183101ef89",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://8dc5ff5c204604be7594ce2fa9100a0638f22b5aada6ebec1e165b0f50a48447",
+				"dweb:/ipfs/QmfH7uWphPrq8jqwGvyh4pFnLEgEPmLwyGV2Bvx1Acjggh"
+			]
+		},
+		"dynamic_nft/Bytecode.sol": {
+			"keccak256": "0xf8b36d0c05cd418caf9628abed04e4a93b7c15be1d3c324698c9577fe79d8b16",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fec19c5de761f52cfd878962fd2ee11e489ee83bb7406711e568568f1688b83c",
+				"dweb:/ipfs/QmabfDKsnxdikp9Sj7HvSWcCT81wowACQxfWMhV53rzkgT"
+			]
+		},
+		"dynamic_nft/MinimalProxyStore.sol": {
+			"keccak256": "0x5b288fe78b9a5d86f54f3c31f050cb8e0c5b3d330ed6955cb5c1edcc68500d26",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://3bb81f1f90039269f1957b08fd0dc80fa66068e469a0cf3d61035e7368fd4d54",
+				"dweb:/ipfs/QmThraGKrdZi5f4oPuMhrd8XvKehBQFiALD7jcNCVff8NS"
+			]
+		}
+	},
+	"version": 1
+}

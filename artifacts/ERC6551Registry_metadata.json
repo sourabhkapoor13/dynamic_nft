@@ -1,0 +1,206 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "InitializationFailed",
+				"type": "error"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "chainId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "tokenContract",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "salt",
+						"type": "uint256"
+					}
+				],
+				"name": "AccountCreated",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "chainId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "salt",
+						"type": "uint256"
+					}
+				],
+				"name": "account",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "implementation",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "chainId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "tokenContract",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "salt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bytes",
+						"name": "initData",
+						"type": "bytes"
+					}
+				],
+				"name": "createAccount",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"account(address,uint256,address,uint256,uint256)": {
+					"details": "Returns the computed address of a token bound account",
+					"returns": {
+						"_0": "The computed address of the account"
+					}
+				},
+				"createAccount(address,uint256,address,uint256,uint256,bytes)": {
+					"details": "Creates a token bound account for an ERC-721 token. If account has already been created, returns the account address without calling create2. If initData is not empty and account has not yet been created, calls account with provided initData after creation. Emits AccountCreated event.",
+					"returns": {
+						"_0": "the address of the account"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"dynamic_nft/ERC6551Registry.sol": "ERC6551Registry"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"dynamic_nft/ERC6551Registry.sol": {
+			"keccak256": "0x0daf14fb8d78fa8217eb5e6c0e51e1c5b9b892a29de2dbd6bf160d073c05739a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4ec5ad4488e87215529408c339a70694bc3677ad40a13ee2bd85955b4ce444b9",
+				"dweb:/ipfs/QmPeBbdXi2keGdVwsb3Afr9Gi7RH5iKuBGK77y9uPdBAmk"
+			]
+		},
+		"dynamic_nft/IERC6551Registry.sol": {
+			"keccak256": "0x8896f13ffb9dde11e0fff1b7e829ea65555602861f844b22314d99bb166530b0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eae1c87143ea8a35ff974f7b368f972d5cb2bc80cced594ceedbaf7ad438092e",
+				"dweb:/ipfs/QmSM3nknraPruLSc4m4N6iWZpwRjXA2WDWjiTHoDyXpWyg"
+			]
+		},
+		"openzeppelin-contracts/utils/Create2.sol": {
+			"keccak256": "0xf35335925904418fa03f87f35feddc196c7fd2b4d6397a1c45c427085cee3707",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a34e0ddd064ea21dbde3d25c614d5966ba26accba2e94029044f5aa38cc9bfdd",
+				"dweb:/ipfs/QmQyB5mjtKGzKz2e3bsEYyS7Ri4YPP81jvwF3hBMvEfL3r"
+			]
+		}
+	},
+	"version": 1
+}
